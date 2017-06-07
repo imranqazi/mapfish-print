@@ -258,6 +258,7 @@ public class ExamplesTest {
                         new ImageSimilarity(expectedOutput).assertSimilarity(image, similarity);
                     }
                 } catch (Throwable e) {
+                    // e.printStackTrace();
                     errors.put(String.format("%s (%s)", example.getName(), requestFile.getName()), e);
                 }
             }
